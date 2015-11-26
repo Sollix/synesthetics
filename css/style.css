@@ -1,8 +1,46 @@
-/*images*/
-.feature img {
-	width: 40%;
+/*global*/
+body {
+	background: url(../images/skyline2.jpg);
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+/*header*/
+header {
+	text-transform: uppercase;
+}
+
+/*nav*/
+nav {
+	text-align: center;
+}
+
+nav li {
+	list-style: none;
+	display: inline;
+}
+
+nav a {
+	display: inline-block;
+	margin: 1em 3em;
+}
+
+/*features*/
+.features {
+	margin-top: 3em;
+}
+
+.features img {
+	width: 35%;
 	height: auto;
 	display: inline-block;
 	float: left;
-	margin: 10% 5%;
+	margin: 2% 7.5%;
 }
