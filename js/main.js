@@ -1,13 +1,15 @@
-$(function() {
+//$(function() {
 	
 	/* Your JS here */
 
 	// After creating your functions below, if they need to run on page load put them here
-	yourFunction();
-
-});
+//	yourFunction();
+//});
 
 // If you need to write functions create them down here
-function yourFunction() {
+//function yourFunction() {
 
-}
+//}
+$(document).ready(function() {
+	$(".fancybox").fancybox();
+});
