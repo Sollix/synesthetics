@@ -7,3 +7,7 @@ $(document).ready(function() {
 $("#feature1").mouseover(function(event){
 	$(this).find(".overlay").css("display","block");
 });
+
+$(".work").hover(function(event){
+	$(".work-links").toggle();
+});
