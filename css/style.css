@@ -43,9 +43,14 @@ nav li {
 }
 
 nav a {
-	display: inline-block;
-	margin: 1em 3em;
+	margin: 0em 3em;
 	font-size: 16px;
+}
+
+.work-links {
+	display: none;
+	text-align: center;
+	margin: 0px 0px 0px -17px;
 }
 
 /*features*/
