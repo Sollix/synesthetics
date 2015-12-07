@@ -8,20 +8,23 @@ a {
 	text-decoration: none;
 }
 
-h1, h2, h3 {
-	text-align: center;
-}
 
 /*header*/
 header {
 	text-transform: uppercase;
 	background-color: black;
+	display: inline-block;
+	width: 100%;
+	padding: 1em 0em;
+	text-align: center;
+}
+
+header h1 {
+	/*float: left;*/
 	color: white;
 	font-family: 'Lora', serif;
 	font-weight: 700;
-	font-size: 20px;
-	padding: 5px;
-	top: 0;
+	font-size: 35px;
 }
 
 .overlay{
@@ -33,24 +36,30 @@ header {
 }
 
 /*nav*/
-nav {
-	text-align: center;
-}
-
-nav li {
+.nav li {
 	list-style: none;
 	display: inline;
 }
 
-nav a {
-	margin: 0em 3em;
+.nav a {
+	margin: 3% 4% 0 0;
 	font-size: 16px;
 }
 
 .work-links {
 	display: none;
-	text-align: center;
-	margin: 0px 0px 0px -17px;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid black;
+	position: relative;
+}
+
+.work-links li{
+	display: none;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	border: 1px solid black;
+	text-align: left;
 }
 
 /*features*/
