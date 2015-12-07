@@ -15,6 +15,21 @@ h1, h2, h3 {
 /*header*/
 header {
 	text-transform: uppercase;
+	background-color: black;
+	color: white;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 5px;
+	top: 0;
+}
+
+.overlay{
+	position: absolute;
+	width: 35%;
+	height: auto;
+	background: red;
+	display: none;
 }
 
 /*nav*/
@@ -30,6 +45,7 @@ nav li {
 nav a {
 	display: inline-block;
 	margin: 1em 3em;
+	font-size: 16px;
 }
 
 /*features*/
@@ -42,5 +58,19 @@ nav a {
 	height: auto;
 	display: inline-block;
 	float: left;
+	margin: 2% 7.5% 0 7.5%;
+}
+
+.feature-text span {
+	display: inline-block;
+	width: 35%;
+	height: auto;
+	display: inline-block;
+	float: left;
 	margin: 2% 7.5%;
+	text-align: center;
+}
+
+.hovertext {
+	background-color: rgba(28, 0, 35, 0.4);
 }
