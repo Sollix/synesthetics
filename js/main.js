@@ -1,13 +1,9 @@
-$(function() {
-	
-	/* Your JS here */
-
-	// After creating your functions below, if they need to run on page load put them here
-	yourFunction();
-
+//fancybox
+$(document).ready(function() {
+	$('.fancybox').fancybox();
 });
 
-// If you need to write functions create them down here
-function yourFunction() {
-
-}
+//hover
+$("#feature1").mouseover(function(event){
+	$(this).find(".overlay").css("display","block");
+});

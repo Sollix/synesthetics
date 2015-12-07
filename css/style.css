@@ -1,8 +1,76 @@
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+/*global*/
+body {
+	background: white;
+	background-size: cover;
 }
 
-/* Your styles here */
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+/*header*/
+header {
+	text-transform: uppercase;
+	background-color: black;
+	color: white;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 5px;
+	top: 0;
+}
+
+.overlay{
+	position: absolute;
+	width: 35%;
+	height: auto;
+	background: red;
+	display: none;
+}
+
+/*nav*/
+nav {
+	text-align: center;
+}
+
+nav li {
+	list-style: none;
+	display: inline;
+}
+
+nav a {
+	display: inline-block;
+	margin: 1em 3em;
+	font-size: 16px;
+}
+
+/*features*/
+.features {
+	margin-top: 3em;
+}
+
+.features img {
+	width: 35%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin: 2% 7.5% 0 7.5%;
+}
+
+.feature-text span {
+	display: inline-block;
+	width: 35%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin: 2% 7.5%;
+	text-align: center;
+}
+
+.hovertext {
+	background-color: rgba(28, 0, 35, 0.4);
+}
