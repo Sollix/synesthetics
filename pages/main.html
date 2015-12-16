@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="Synesthetics" content="Not a blog this time!">
+<head>
+	<meta charset="utf-8">
+	<meta name="Synesthetics" content="Not a blog this time!">
 	
-		<title>Synesthetics</title>
+	<title>Synesthetics</title>
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="../css/normalize.css">
-		<link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-		<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="../css/style.css">
-		
-		
-	</head>
-	<body>
-		<header>
-			<h1>Synesthetics</h1>
-		</header>
-		<nav>
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Synesthetics</h1>
+		<div class="nav">
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="main.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
-				<li class="work"> <a href="#">Work</a></li>
-				<li><a href="#">Submit</a></li>
-				<li><a href="#">Random</a></li>
+				<li class="work"> <a href="#">Work</a>
+					<ul class="work-links">
+						<li><a href="visual.html">Visual</a></li>
+						<li><a href="sound.html">Sound</a></li>
+						<li><a href="writing.html">Writing</a></li>
+					</ul>
+				</li>
+				<li><a href="submit.html">Submit</a></li>
 			</ul>
-			<ul class="work-links">
-				<li><a href="#">Visual</a></li>
-				<li><a href="#">Sound</a></li>
-				<li><a href="#">Writing</a></li>
-			</ul>
-		</nav>
-		<div class="blurb">
-			<h2>Synesthetics allows artists of all kinds to draw inspiration from other artists working in various media. Visit our <a href="about.html">about page</a> to learn more.</h2> <!-- Change this -->
 		</div>
-		<div class="features">
-			<h3>Featured Works:</h3>
-			<a class="fancybox" id="feature1" rel="group" href="../images/hachihachi.jpg"><div class="overlay"></div><img src="../images/hachihachi.jpg" alt="Hachi" class="hovertext" /></a>
-			<a class="fancybox" id="feature2" rel="group" href="../images/whitney.jpg"><img src="../images/whitney.jpg" alt="Whitney" class="hovertext" /></a>
+	</header>
+	<div class="blurb">
+		<h2>Synesthetics allows artists of all kinds to draw inspiration from other artists working in various media. Visit our <a href="about.html">about page</a> to learn more.</h2> <!-- Change this -->
+	</div>
+	<div class="features">
+		<h1>Featured Works:</h1>
+		<div class="feature1">
+			<a class="fancybox" id="feature1" rel="group" href="../images/hachihachi.jpg"><img src="../images/hachihachi.jpg" alt="Hachi" /></a>
+			<div class="feature1-text">
+				<span>
+					<h4>Sample Header</h4>
+					<p>This is some text about the above image.</p>
+					<h5>Inspired by: X</h5>
+				</span>
+			</div>
 		</div>
-		<div class="feature-text">
-			<span>
-				<h4>Sample Header</h4>
-				<p>This is some text about the above image.</p>
-				<h5>Inspired by: X</h5>
-			</span>
-			<span>
+		<div class="feature2">
+			<div class="feature2-text">
 				<h4>Sample Header 2</h4>
 				<p>This is some text about the above image.</p>
 				<h5>Inspired by: X</h5>
-			</span>
+			</div>
+			<a class="fancybox" id="feature2" rel="group" href="../images/whitney.jpg"><img src="../images/whitney.jpg" alt="Whitney" /></a>
 		</div>
-		<footer>
-				
-		</footer>
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="../fancybox/source/jquery.fancybox.js"></script>
-		<script src="../js/main.js"></script>
-	</body>
+	</div>
+	<footer>
+
+	</footer>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="../fancybox/source/jquery.fancybox.js"></script>
+	<script src="../js/main.js"></script>
+</body>
 </html>
