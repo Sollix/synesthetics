@@ -19,7 +19,6 @@ header {
 	background-color: rgba(0, 0, 0, 0.8);
 	display: inline-block;
 	width: 100%;
-	/*padding: 5px 0;*/
 }
 
 header h1 {
@@ -28,17 +27,19 @@ header h1 {
 	font-weight: 700;
 	font-size: 35px;
 	float: left;
-	margin-left: 5%;
 }
 
 /*nav*/
-
 .nav li {
 	float: right;
 	margin: 1.5% 4% 0 0;
 	list-style: none;
 	display: inline;
 	position: relative;
+}
+
+.nav li:first-of-type {
+	margin-right: 0;
 }
 
 .nav a {
@@ -66,10 +67,22 @@ header h1 {
 .blurb {
 	height: 450px;
 	margin: auto;
-	width: 80%;
+	/*width: 80%;*/
 
 }
-
+/*section styles - for structure */
+header, section, .features {
+	width: 100%;
+	border:1px solid blue;
+	padding:0px 20px;
+	box-sizing: border-box; 
+	/*prefix this*/
+	overflow: hidden;
+}
+section .feature-single, section h2{
+	border:1px solid silver;
+	width: 100%;
+}
 
 /*features*/
 .features {
@@ -85,7 +98,9 @@ header h1 {
 	height: auto;
 	margin: 2% 7.5% 2% 7.5%;
 }
-
+.feature-single {
+	border:1px solid silver;
+}
 .feature1 {
 	background-color: rgba(0, 26, 47, 0.9);
 	display: block;
