@@ -1,23 +1,31 @@
 /*global*/
-body {
+* {
 	box-sizing: border-box;
+}
+
+body {
 	background: url(../images/footer_lodyas2.png);
+	color: #707070;
 }
 
 a {
 	text-decoration: none;
+	color: #004196;
 }
 
 .bold {
 	font-weight: bold;
 }
 
+h1, h2, h3, p, a {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
 
 /*header*/
 header {
 	text-transform: uppercase;
 	background-color: rgba(0, 0, 0, 0.8);
-	display: inline-block;
+	display: block;
 	width: 100%;
 }
 
@@ -43,8 +51,9 @@ header h1 {
 }
 
 .nav a {
-	font-size: 20px;
-	color: #8F8F8F;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #707070;
 }
 
 .work-links {
@@ -73,9 +82,7 @@ header h1 {
 /*section styles - for structure */
 header, section, .features {
 	width: 100%;
-	border:1px solid blue;
-	padding:0px 20px;
-	box-sizing: border-box; 
+	padding:0px 20px; 
 	/*prefix this*/
 	overflow: hidden;
 }
@@ -138,11 +145,21 @@ section .feature-single, section h2{
 }
 
 /*Visual Page*/
+.v-works {
+	width: 100%;
+}
+
 .v-work {
 	display: inline-block;
-	width: 40%;
-	color: white;
-	padding: 4%;
+	width: 49%;
+	margin-top: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+}
+
+.v-work:nth-child(2n+0) {  
+  float: right;
 }
 
 .v-work img {
@@ -151,7 +168,49 @@ section .feature-single, section h2{
 }
 
 .v-description {
-	width: 35%;
+	width: 50%;
 	float: right;
 	padding: 3%;
+}
+
+.v-description h3 {
+	font-size: 1.5em;
+	padding: .5em 0;
+}
+
+.v-description p {
+	font-size: 1em;
+	padding: 1em 0;
+}
+
+/*sounds*/
+.s-work {
+	width: 100%;
+	margin-top: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+}
+
+.s-work iframe {
+	width: 49%;
+}
+
+.s-description {
+	width: 49%;
+	height: auto;
+	display: inline-block;
+	float: right;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.s-description h3 {
+	font-size: 2em;
+	padding: .5em 0;
+}
+
+.s-description p {
+	font-size: 1.5em;
+	padding: 1em 0;
 }
