@@ -3,6 +3,16 @@
 	box-sizing: border-box;
 }
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
 body {
 	background: url(../images/footer_lodyas2.png);
 	color: #707070;
@@ -21,12 +31,25 @@ h1, h2, h3, p, a {
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
+/*section styles - for structure */
+section, .features {
+	width: 100%;
+	padding:0px 20px; 
+	/*prefix this*/
+	overflow: hidden;
+}
+
+section .feature-single, section h2{
+	width: 100%;
+}
+
 /*header*/
 header {
 	text-transform: uppercase;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.7);
 	display: block;
 	width: 100%;
+	padding:0px 20px;
 }
 
 header h1 {
@@ -59,7 +82,7 @@ header h1 {
 .work-links {
 	display: none;
 	background-color: rgba(0, 0, 0, 0.8);
-	padding: .3em .5em .5em .5em;
+	padding: .3em .5em .5em .3em;
 	position: absolute;
 	top: 2em;
 	left: 0;
@@ -75,25 +98,13 @@ header h1 {
 /*blurb*/
 .blurb {
 	height: 450px;
-	margin: auto;
-	/*width: 80%;*/
-
-}
-/*section styles - for structure */
-header, section, .features {
-	width: 100%;
-	padding:0px 20px; 
-	/*prefix this*/
-	overflow: hidden;
-}
-section .feature-single, section h2{
-	border:1px solid silver;
-	width: 100%;
+	text-align: center;
 }
 
 /*features*/
 .features {
 	color: #8F8F8F;
+	text-align: center;
 }
 
 .features h1 {
@@ -105,13 +116,24 @@ section .feature-single, section h2{
 	height: auto;
 	margin: 2% 7.5% 2% 7.5%;
 }
-.feature-single {
-	border:1px solid silver;
+
+.features h3 {
+	font-size: 3em;
 }
+
+.features h4 {
+	font-size: 2em;
+}
+
+.features p {
+	font-size: 1.5em;
+}
+
 .feature1 {
-	background-color: rgba(0, 26, 47, 0.9);
+	background-color: rgba(0, 26, 47, 0.8);
 	display: block;
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	overflow: hidden;
 }
 
@@ -124,12 +146,14 @@ section .feature-single, section h2{
 	height: auto;
 	float: right;
 	text-align: center;
+	margin: 2% 7.5% 2% 7.5%;
 }
 
 .feature2 {
 	background-color: rgba(0, 0, 0, 0.8);
 	display: block;
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	overflow: hidden;
 }
 
@@ -142,6 +166,7 @@ section .feature-single, section h2{
 	height: auto;
 	float: left;
 	text-align: center;
+	margin: 2% 7.5% 2% 7.5%;
 }
 
 /*Visual Page*/
@@ -185,7 +210,8 @@ section .feature-single, section h2{
 
 /*sounds*/
 .s-work {
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	margin-top: 2em;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 2px solid rgba(0, 0, 0, 0.5);
@@ -213,4 +239,59 @@ section .feature-single, section h2{
 .s-description p {
 	font-size: 1.5em;
 	padding: 1em 0;
+}
+
+/*writing*/
+.w-work {
+	width: 90%;
+	margin: auto;
+	margin-top: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+}
+
+.w-work h2 {
+	font-size: 2em;
+}
+
+.w-work p {
+	font-size: 1.5em; 
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+/*submissions*/
+.submit-form {
+	width: 75%;
+	margin: auto;
+	margin-top: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+}
+
+.submit-form input {
+	display: block;
+	margin-bottom: 1.5em;
+	width: 40%;
+	font-size: 1em;
+	padding: .5em;
+	border-radius: .3em;
+}
+
+.submit-form input[type=file] {
+	font-size: 1em;
+	width: 40%;
+	padding-left: 0;
+}
+
+.submit-form input[type=submit] {
+	width: 40%;
+	margin-top: 2em;
 }
