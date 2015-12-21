@@ -97,8 +97,22 @@ header h1 {
 
 /*blurb*/
 .blurb {
-	height: 450px;
+	width: 100%;
+	height: auto;
+	background: url(../images/skyline2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-bottom: 41.75%;
 	text-align: center;
+}
+
+.blurb h2 {
+	max-width: 500px;
+	padding: 1em 2em;
+	margin: auto;
+	margin-top: 250px;
+	background: rgba(0, 0, 0, 0.2);
+	border: 2px solid rgba(0, 0, 0, 0.4);
 }
 
 /*features*/
@@ -109,6 +123,10 @@ header h1 {
 
 .features h1 {
 	text-align: center;
+	font-size: 3em;
+	background: rgba(0, 0, 0, 0.3);
+	padding: .5em 0;
+	margin: 0;
 }
 
 .features img {
@@ -132,7 +150,7 @@ header h1 {
 .feature1 {
 	background-color: rgba(0, 26, 47, 0.8);
 	display: block;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	overflow: hidden;
 }
@@ -152,7 +170,7 @@ header h1 {
 .feature2 {
 	background-color: rgba(0, 0, 0, 0.8);
 	display: block;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	overflow: hidden;
 }
@@ -294,4 +312,25 @@ header h1 {
 .submit-form input[type=submit] {
 	width: 40%;
 	margin-top: 2em;
+}
+
+/*about*/
+.about {
+	width: 90%;
+	margin: auto;
+	margin-top: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+	font-size: 1.75em;
+}
+
+.about img {
+	width: 40%;
+	float: left;
+	padding: 1em 1em 0 0;
+}
+
+.about .sub {
+	font-size: .5em;
 }
