@@ -115,6 +115,12 @@ header h1 {
 	border: 2px solid rgba(0, 0, 0, 0.4);
 }
 
+.blurb h2:hover {
+	background-color: rgba(0, 26, 47, 0.4);
+	border: 2px solid rgba(0, 0, 0, 1);
+	color: white;
+}
+
 /*features*/
 .features {
 	color: #8F8F8F;
@@ -195,7 +201,7 @@ header h1 {
 .v-work {
 	display: inline-block;
 	width: 49%;
-	margin-top: 2em;
+	margin: 2em 0;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 2px solid rgba(0, 0, 0, 0.5);
 	padding: 1em .5em;
@@ -228,7 +234,7 @@ header h1 {
 
 /*sounds*/
 .s-work {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	margin-top: 2em;
 	background-color: rgba(0, 0, 0, 0.3);
@@ -319,6 +325,7 @@ header h1 {
 	width: 90%;
 	margin: auto;
 	margin-top: 2em;
+	margin-bottom: 2em;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 2px solid rgba(0, 0, 0, 0.5);
 	padding: 1em .5em;
