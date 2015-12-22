@@ -1,25 +1,55 @@
 /*global*/
-body {
+* {
 	box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
 	background: url(../images/footer_lodyas2.png);
+	color: #707070;
 }
 
 a {
 	text-decoration: none;
+	color: #004196;
 }
 
 .bold {
 	font-weight: bold;
 }
 
+h1, h2, h3, p, a {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/*section styles - for structure */
+section, .features {
+	width: 100%;
+	padding:0px 20px; 
+	/*prefix this*/
+	overflow: hidden;
+}
+
+section .feature-single, section h2{
+	width: 100%;
+}
 
 /*header*/
 header {
 	text-transform: uppercase;
-	background-color: rgba(0, 0, 0, 0.8);
-	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: block;
 	width: 100%;
-	/*padding: 5px 0;*/
+	padding:0px 20px;
 }
 
 header h1 {
@@ -28,11 +58,9 @@ header h1 {
 	font-weight: 700;
 	font-size: 35px;
 	float: left;
-	margin-left: 5%;
 }
 
 /*nav*/
-
 .nav li {
 	float: right;
 	margin: 1.5% 4% 0 0;
@@ -41,15 +69,20 @@ header h1 {
 	position: relative;
 }
 
+.nav li:first-of-type {
+	margin-right: 0;
+}
+
 .nav a {
-	font-size: 20px;
-	color: #8F8F8F;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #707070;
 }
 
 .work-links {
 	display: none;
 	background-color: rgba(0, 0, 0, 0.8);
-	padding: .3em .5em .5em .5em;
+	padding: .3em .5em .5em .3em;
 	position: absolute;
 	top: 2em;
 	left: 0;
@@ -64,20 +97,42 @@ header h1 {
 
 /*blurb*/
 .blurb {
-	height: 450px;
-	margin: auto;
-	width: 80%;
-
+	width: 100%;
+	height: auto;
+	background: url(../images/skyline2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-bottom: 41.75%;
+	text-align: center;
 }
 
+.blurb h2 {
+	max-width: 500px;
+	padding: 1em 2em;
+	margin: auto;
+	margin-top: 250px;
+	background: rgba(0, 0, 0, 0.2);
+	border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.blurb h2:hover {
+	background-color: rgba(0, 26, 47, 0.4);
+	border: 2px solid rgba(0, 0, 0, 1);
+	color: white;
+}
 
 /*features*/
 .features {
 	color: #8F8F8F;
+	text-align: center;
 }
 
 .features h1 {
 	text-align: center;
+	font-size: 3em;
+	background: rgba(0, 0, 0, 0.3);
+	padding: .5em 0;
+	margin: 0;
 }
 
 .features img {
@@ -86,10 +141,23 @@ header h1 {
 	margin: 2% 7.5% 2% 7.5%;
 }
 
+.features h3 {
+	font-size: 3em;
+}
+
+.features h4 {
+	font-size: 2em;
+}
+
+.features p {
+	font-size: 1.5em;
+}
+
 .feature1 {
-	background-color: rgba(0, 26, 47, 0.9);
+	background-color: rgba(0, 26, 47, 0.8);
 	display: block;
 	width: 100%;
+	margin: auto;
 	overflow: hidden;
 }
 
@@ -102,12 +170,14 @@ header h1 {
 	height: auto;
 	float: right;
 	text-align: center;
+	margin: 2% 7.5% 2% 7.5%;
 }
 
 .feature2 {
 	background-color: rgba(0, 0, 0, 0.8);
 	display: block;
 	width: 100%;
+	margin: auto;
 	overflow: hidden;
 }
 
@@ -120,14 +190,25 @@ header h1 {
 	height: auto;
 	float: left;
 	text-align: center;
+	margin: 2% 7.5% 2% 7.5%;
 }
 
 /*Visual Page*/
+.v-works {
+	width: 100%;
+}
+
 .v-work {
 	display: inline-block;
-	width: 40%;
-	color: white;
-	padding: 4%;
+	width: 49%;
+	margin: 2em 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+}
+
+.v-work:nth-child(2n+0) {  
+  float: right;
 }
 
 .v-work img {
@@ -136,7 +217,127 @@ header h1 {
 }
 
 .v-description {
-	width: 35%;
+	width: 50%;
 	float: right;
 	padding: 3%;
+}
+
+.v-description h3 {
+	font-size: 1.5em;
+	padding: .5em 0;
+}
+
+.v-description p {
+	font-size: 1em;
+	padding: 1em 0;
+}
+
+/*sounds*/
+.s-work {
+	width: 100%;
+	margin: auto;
+	margin-top: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+}
+
+.s-work iframe {
+	width: 49%;
+}
+
+.s-description {
+	width: 49%;
+	height: auto;
+	display: inline-block;
+	float: right;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.s-description h3 {
+	font-size: 2em;
+	padding: .5em 0;
+}
+
+.s-description p {
+	font-size: 1.5em;
+	padding: 1em 0;
+}
+
+/*writing*/
+.w-work {
+	width: 90%;
+	margin: auto;
+	margin-top: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+}
+
+.w-work h2 {
+	font-size: 2em;
+}
+
+.w-work p {
+	font-size: 1.5em; 
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+/*submissions*/
+.submit-form {
+	width: 75%;
+	margin: auto;
+	margin-top: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+}
+
+.submit-form input {
+	display: block;
+	margin-bottom: 1.5em;
+	width: 40%;
+	font-size: 1em;
+	padding: .5em;
+	border-radius: .3em;
+}
+
+.submit-form input[type=file] {
+	font-size: 1em;
+	width: 40%;
+	padding-left: 0;
+}
+
+.submit-form input[type=submit] {
+	width: 40%;
+	margin-top: 2em;
+}
+
+/*about*/
+.about {
+	width: 90%;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 1em .5em;
+	font-size: 1.75em;
+}
+
+.about img {
+	width: 40%;
+	float: left;
+	padding: 1em 1em 0 0;
+}
+
+.about .sub {
+	font-size: .5em;
 }
