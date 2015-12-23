@@ -16,6 +16,7 @@
 body {
 	background: url(../images/footer_lodyas2.png);
 	color: #707070;
+	margin: 0;
 }
 
 a {
@@ -95,6 +96,15 @@ header h1 {
 	text-align: left;
 }
 
+/*footer*/
+footer {
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: block;
+	width: 100%;
+	padding: 1px 20px;
+}
+
 /*blurb*/
 .blurb {
 	width: 100%;
@@ -112,13 +122,13 @@ header h1 {
 	margin: auto;
 	margin-top: 250px;
 	background: rgba(0, 0, 0, 0.2);
-	border: 2px solid rgba(0, 0, 0, 0.4);
+	border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .blurb h2:hover {
-	background-color: rgba(0, 26, 47, 0.4);
+	background-color: rgba(0, 26, 47, 0.2);
 	border: 2px solid rgba(0, 0, 0, 1);
-	color: white;
+	color: #cccccc;
 }
 
 /*features*/
@@ -178,6 +188,7 @@ header h1 {
 	display: block;
 	width: 100%;
 	margin: auto;
+	margin-bottom: 2em;
 	overflow: hidden;
 }
 
@@ -201,6 +212,7 @@ header h1 {
 .v-work {
 	display: inline-block;
 	width: 49%;
+	height: auto;
 	margin: 2em 0;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 2px solid rgba(0, 0, 0, 0.5);
@@ -223,7 +235,7 @@ header h1 {
 }
 
 .v-description h3 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	padding: .5em 0;
 }
 
@@ -240,6 +252,10 @@ header h1 {
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 2px solid rgba(0, 0, 0, 0.5);
 	padding: 1em .5em;
+}
+
+.s-work:last-of-type {
+	margin-bottom: 2em;
 }
 
 .s-work iframe {
@@ -275,6 +291,10 @@ header h1 {
 	padding: 1em .5em;
 }
 
+.w-work:last-of-type {
+	margin-bottom: 2em;
+}
+
 .w-work h2 {
 	font-size: 2em;
 }
@@ -295,6 +315,7 @@ header h1 {
 	width: 75%;
 	margin: auto;
 	margin-top: 2em;
+	margin-bottom: 2em;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 2px solid rgba(0, 0, 0, 0.5);
 	padding: 1em .5em;
