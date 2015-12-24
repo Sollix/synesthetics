@@ -13,10 +13,25 @@
     clear: both;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	background: url(../images/footer_lodyas2.png);
 	color: #707070;
 	margin: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -3em;
+}
+
+.footer, .push {
+	height: 3em;
 }
 
 a {
